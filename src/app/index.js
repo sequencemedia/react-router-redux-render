@@ -15,7 +15,7 @@ App.propTypes = {
   store: PropTypes.shape().isRequired,
   router: PropTypes.shape({
     location: PropTypes.string.isRequired,
-    context: PropTypes.shape()
+    context: PropTypes.shape().isRequired
   }).isRequired,
   routes: PropTypes.shape().isRequired
 }
