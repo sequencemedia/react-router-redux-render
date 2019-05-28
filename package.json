@@ -1,6 +1,6 @@
 {
   "name": "react-router-redux-render",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
   "main": "./index.js",
   "author": {
