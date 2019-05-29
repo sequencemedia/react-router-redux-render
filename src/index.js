@@ -1,55 +1,59 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
-import Boom from '@hapi/boom'
 
-import App from './app'
+import { Provider } from 'react-redux'
+import { StaticRouter as Router } from 'react-router-dom'
+
+import Boom from '@hapi/boom'
 
 const badImplementation = (e, data) => Boom.boomify(e, { statusCode: 500, message: 'Rendering exception', data })
 const notFound = (data) => Boom.notFound('Routing exception', data)
 
-const getReactDOMServerRenderToString = ({ store, location, context, routes }) => {
+const getReactDOMServerRenderToString = (store, routerProps, routes) => {
   try {
     return ReactDOMServer.renderToString(
-      <App
-        store={store}
-        router={{ location, context }}
-        routes={routes}
-      />
+      <Provider store={store}>
+        <Router {...routerProps}>
+          {routes}
+        </Router>
+      </Provider>
     )
   } catch (e) {
-    throw badImplementation(e, { location, context })
+    throw badImplementation(e, routerProps)
   }
 }
 
-const getReactDOMServerRenderToStaticMarkup = ({ store, location, context, routes }) => {
+const getReactDOMServerRenderToStaticMarkup = (store, routerProps, routes) => {
   try {
     return ReactDOMServer.renderToStaticMarkup(
-      <App
-        store={store}
-        router={{ location, context }}
-        routes={routes}
-      />
+      <Provider store={store}>
+        <Router {...routerProps}>
+          {routes}
+        </Router>
+      </Provider>
     )
   } catch (e) {
-    throw badImplementation(e, { location, context })
+    throw badImplementation(e, routerProps)
   }
 }
 
 /**
  * @return {String}
  */
-export const renderToString = (store, routes, location, context = {}) => (
-  getReactDOMServerRenderToString({ store, routes, location, context }) || throw notFound({ location, context })
+export const renderToString = (store, { location, context = {}, ...router } = {}, routes = {}) => (
+  getReactDOMServerRenderToString(store, { ...router, location, context }, routes) || throw notFound({ ...router, location, context })
 )
 
 /**
  * @return {String}
  */
-export const renderToStaticMarkup = (store, routes, location, context = {}) => (
-  getReactDOMServerRenderToStaticMarkup({ store, routes, location, context }) || throw notFound({ location, context })
+export const renderToStaticMarkup = (store, { location, context = {}, ...router } = {}, routes = {}) => (
+  getReactDOMServerRenderToStaticMarkup(store, { ...router, location, context }, routes) || throw notFound({ ...router, location, context })
 )
 
 /**
  * @return {Promise}
  */
-export const render = async (store, routes, location, context = {}) => renderToString(store, routes, location, context)
+export const render = async (store, { location, context = {}, ...router } = {}, routes = {}) => (
+  getReactDOMServerRenderToString(store, { ...router, location, context }, routes) || throw notFound({ ...router, location, context })
+)
