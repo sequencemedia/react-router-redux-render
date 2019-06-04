@@ -2,6 +2,11 @@
 
 Render isomorphic _React_ apps and components in Node.
 
+- Using _React Router_
+- With Redux
+
+_Compatible with React Router 5._
+
 An example implementation can be found in [react-router-pagination-io](http://github.com/sequencemedia/react-router-pagination-io.git).
 
 ## Example
@@ -26,7 +31,7 @@ const {
   renderToString
 } = require('react-router-redux-render')
 
-app.get('/', ({ url: { path = '/' } }, res) => res.send(renderToString(store, routes, pathname)))
+app.get('/', ({ url: { pathname = '/' } }, res) => res.send(renderToString(store, routes, pathname)))
 
 app.listen(port, () => console.log(`Express ${port}`))
 ```
