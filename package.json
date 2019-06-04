@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-router-redux-render",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
   "main": "./index.js",
   "author": {
