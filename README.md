@@ -31,7 +31,7 @@ const {
   renderToString
 } = require('react-router-redux-render')
 
-app.get('/', ({ url: { pathname = '/' } }, res) => res.send(renderToString(store, routes, pathname)))
+app.get('/', ({ url: { path: pathname = '/' } }, res) => res.send(renderToString(store, routes, pathname)))
 
 app.listen(port, () => console.log(`Express ${port}`))
 ```
