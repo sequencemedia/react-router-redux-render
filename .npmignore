@@ -4,4 +4,10 @@
 **/npm-debug.log
 
 # NPM
+.npmignore
 .npmrc
+
+.eslintignore
+.eslintrc
+
+babel.config.js
