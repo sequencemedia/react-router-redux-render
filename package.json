@@ -2,17 +2,6 @@
   "name": "@sequencemedia/react-router-redux-render",
   "version": "1.0.12",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
-  "main": "./index.js",
-  "author": {
-    "name": "Jonathan Perry for Sequence Media Limited",
-    "email": "jonathanperry@sequencemedia.net",
-    "url": "http://sequencemedia.net"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/sequencemedia/react-router-redux-render.git"
-  },
-  "license": "MIT",
   "keywords": [
     "React",
     "Router",
@@ -23,33 +12,51 @@
     "renderToString",
     "renderToStaticMarkup"
   ],
+  "main": "./index.js",
+  "author": {
+    "name": "Jonathan Perry for Sequence Media Limited",
+    "email": "jonathanperry@sequencemedia.net",
+    "url": "http://sequencemedia.net"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sequencemedia/react-router-redux-render.git"
+  },
   "scripts": {
-    "build": "babel src -d lib",
-    "build:watch": "babel src -d lib -w",
+    "build": "npm run babel",
+    "build:watch": "npm run babel:watch",
+    "babel": "babel src -d lib",
+    "babel:watch": "npm run babel -- -w",
+    "clean": "rimraf lib",
     "prepublishOnly": "npm run build",
-    "lint": "eslint *.js src",
+    "prebuild": "npm run clean",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "pre-commit": "npm run lint && npm run build && git add lib"
   },
   "dependencies": {
-    "@babel/runtime": "^7.10.2",
+    "@babel/runtime": "^7.10.3",
     "@hapi/boom": "^9.1.0",
     "debug": "^4.1.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.2",
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-export-default-from": "^7.10.1",
     "@babel/plugin-proposal-export-namespace-from": "^7.10.1",
     "@babel/plugin-proposal-throw-expressions": "^7.10.1",
-    "@babel/plugin-transform-runtime": "^7.10.1",
-    "@babel/preset-env": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "babel-eslint": "^10.1.0",
     "core-js": "^3.6.5",
-    "eslint": "^7.2.0",
+    "eslint": "^7.3.1",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
@@ -60,7 +67,8 @@
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "rimraf": "^3.0.2"
   },
   "peerDependencies": {
     "react": "^16.13.1",
