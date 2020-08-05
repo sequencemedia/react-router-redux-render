@@ -39,7 +39,7 @@
     "pre-commit": "npm run lint && npm run build && git add lib"
   },
   "dependencies": {
-    "@babel/runtime": "^7.11.1",
+    "@babel/runtime": "^7.11.2",
     "@hapi/boom": "^9.1.0",
     "debug": "^4.1.1"
   },
