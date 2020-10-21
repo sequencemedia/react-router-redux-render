@@ -1,11 +1,16 @@
 .DS_Store
 
-**/node_modules/**/*
-**/npm-debug.log
+.circleci
+.github
+
+.editorconfig
+.eslintignore
+.eslintrc
+
+.gitignore
+
+.depsrc
 
 # NPM
 .npmignore
 .npmrc
-
-.eslintignore
-.eslintrc
