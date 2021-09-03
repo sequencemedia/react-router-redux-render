@@ -39,21 +39,21 @@
     "pre-commit": "npm run lint && npm run build && git add lib"
   },
   "dependencies": {
-    "@babel/runtime": "^7.15.3",
+    "@babel/runtime": "^7.15.4",
     "@hapi/boom": "^9.1.4",
     "debug": "^4.3.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.15.0",
-    "@babel/eslint-parser": "^7.15.0",
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.4",
+    "@babel/eslint-parser": "^7.15.4",
     "@babel/plugin-proposal-export-default-from": "^7.14.5",
     "@babel/plugin-proposal-export-namespace-from": "^7.14.5",
     "@babel/plugin-proposal-throw-expressions": "^7.14.5",
     "@babel/plugin-transform-runtime": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
-    "core-js": "^3.16.4",
+    "core-js": "^3.17.2",
     "eslint": "^7.32.0",
     "husky": "^7.0.2",
     "react": "17.0.1",
