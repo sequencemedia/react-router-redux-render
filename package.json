@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.4",
+    "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "^7.15.4",
     "@babel/plugin-proposal-export-default-from": "^7.14.5",
     "@babel/plugin-proposal-export-namespace-from": "^7.14.5",
@@ -58,7 +58,7 @@
     "husky": "^7.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-redux": "^7.2.4",
+    "react-redux": "^7.2.5",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "redux": "^4.1.1",
