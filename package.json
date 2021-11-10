@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-router-redux-render",
-  "version": "2.0.34",
+  "version": "2.0.35",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
   "keywords": [
     "React",
@@ -40,14 +40,14 @@
     "pre-commit": "npm run lint && npm run build && git add lib && npm run gulp -- pre-commit"
   },
   "dependencies": {
-    "@babel/runtime": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
     "@hapi/boom": "^9.1.4",
     "debug": "^4.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
-    "@babel/eslint-parser": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
     "@babel/plugin-proposal-export-default-from": "^7.16.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.16.0",
     "@babel/plugin-proposal-throw-expressions": "^7.16.0",
