@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-router-redux-render",
-  "version": "2.0.48",
+  "version": "2.0.49",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
   "keywords": [
     "React",
@@ -20,7 +20,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=12.19.0"
+    "node": ">=16.13.0"
   },
   "repository": {
     "type": "git",
