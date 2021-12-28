@@ -4,9 +4,9 @@ import {
   exec
 } from 'child_process'
 
-const log = debug('@modernpoacher/isomorphic:build:gulp:pre-commit')
+const log = debug('@sequencemedia/react-router-redux-render:build:gulp:pre-commit')
 
-log('`@modernpoacher/isomorphic` is awake')
+log('`@sequencemedia/react-router-redux-render` is awake')
 
 const PACKAGE_VERSION_CHANGES = /-+\s+"version":\s"(\d+\.\d+\.\d+)",\s+\++\s+"version":\s"(\d+\.\d+\.\d+)",\s+/s
 
