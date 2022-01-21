@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-router-redux-render",
-  "version": "2.0.100",
+  "version": "2.0.101",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
   "keywords": [
     "React",
@@ -52,7 +52,7 @@
     "@babel/plugin-proposal-export-namespace-from": "^7.16.7",
     "@babel/plugin-proposal-throw-expressions": "^7.16.7",
     "@babel/plugin-transform-runtime": "^7.16.10",
-    "@babel/preset-env": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/register": "^7.16.9",
     "core-js": "^3.20.3",
