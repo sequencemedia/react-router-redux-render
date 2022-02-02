@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-router-redux-render",
-  "version": "2.0.110",
+  "version": "2.0.111",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
   "keywords": [
     "React",
@@ -55,7 +55,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/register": "^7.16.9",
-    "core-js": "^3.20.3",
+    "core-js": "^3.21.0",
     "eslint": "7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
