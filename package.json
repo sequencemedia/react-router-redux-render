@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.9",
-    "@hapi/boom": "^9.1.4",
+    "@hapi/boom": "^10.0.0",
     "debug": "^4.3.4"
   },
   "devDependencies": {
