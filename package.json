@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-router-redux-render",
-  "version": "2.0.323",
+  "version": "2.0.324",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
   "keywords": [
     "React",
@@ -62,7 +62,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react": "^7.32.2",
     "gulp": "^4.0.2",
     "husky": "^8.0.3",
     "react": "17.0.1",
