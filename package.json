@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-router-redux-render",
-  "version": "2.0.334",
+  "version": "2.0.335",
   "description": "Sync/async isomorphic render of React apps with React Router + Redux",
   "keywords": [
     "React",
@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.20.13",
-    "@hapi/boom": "^10.0.0",
+    "@hapi/boom": "^10.0.1",
     "debug": "^4.3.4"
   },
   "devDependencies": {
