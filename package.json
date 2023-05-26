@@ -12,7 +12,8 @@
     "renderToString",
     "renderToStaticMarkup"
   ],
-  "main": "./index.js",
+  "type": "module",
+  "main": "./src/index.mjs",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "jonathanperry@sequencemedia.net",
@@ -20,41 +21,30 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=18.5.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/sequencemedia/react-router-redux-render.git"
   },
   "scripts": {
-    "build": "npm run babel",
-    "build:watch": "npm run babel:watch",
-    "babel": "babel src -d lib",
-    "babel:watch": "npm run babel -- -w",
-    "clean": "rimraf lib",
-    "prepublishOnly": "npm run build",
-    "prebuild": "npm run clean",
-    "lint": "eslint .",
+    "test": "NODE_ENV=test mocha test --recursive --verbose",
+    "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@babel/runtime": "^7.21.5",
     "@hapi/boom": "^10.0.1",
     "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.5",
     "@babel/core": "^7.21.8",
     "@babel/eslint-parser": "^7.21.8",
-    "@babel/plugin-proposal-export-default-from": "^7.18.10",
-    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
-    "@babel/plugin-proposal-throw-expressions": "^7.18.6",
-    "@babel/plugin-transform-runtime": "^7.21.4",
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-react": "^7.18.6",
     "@babel/register": "^7.21.0",
     "@sequencemedia/hooks": "^1.0.423",
+    "chai": "^4.3.7",
     "core-js": "^3.30.2",
     "eslint": "^8.41.0",
     "eslint-config-standard": "^17.0.0",
@@ -63,12 +53,18 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.3",
+    "mocha": "^10.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "^8.0.5",
     "react-router": "6.11.2",
     "react-router-dom": "6.11.2",
     "redux": "^4.2.1",
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.1",
+    "sinon": "^15.1.0",
+    "sinon-chai": "^3.7.0"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
   }
 }
