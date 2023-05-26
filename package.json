@@ -29,7 +29,7 @@
   },
   "scripts": {
     "test": "NODE_ENV=test mocha test --recursive --verbose",
-    "lint": "eslint . --ext .mjs --ext .cjs",
+    "lint": "eslint . --ext .mjs --ext .cjs --ext .jsx",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install"
   },
