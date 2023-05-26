@@ -1,8 +1,17 @@
+/**
+ * @typedef {import('redux').Store} Store
+ */
+
+import debug from 'debug'
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { Provider } from 'react-redux'
 import { StaticRouter as Router } from 'react-router-dom/server'
 import Boom from '@hapi/boom'
+
+const log = debug('@sequencemedia/react-redux-render')
+
+log('`react-redux-render` is awake')
 
 /**
  * @param {Error} e
@@ -12,7 +21,7 @@ import Boom from '@hapi/boom'
 const badImplementation = (e, data) => Boom.boomify(e, { statusCode: 500, message: 'Rendering exception', data })
 
 /**
- * @param {Object.<string, any>} store
+ * @param {Store} store
  * @param {Object.<string, any>} routerProps
  * @param {Object.<string, any>} routes
  * @returns {string}
@@ -34,7 +43,7 @@ export function getReactDOMServerRenderToString (store, routerProps, routes) {
 }
 
 /**
- * @param {Object.<string, any>} store
+ * @param {Store} store
  * @param {Object.<string, any>} routerProps
  * @param {Object.<string, any>} routes
  * @returns {string}

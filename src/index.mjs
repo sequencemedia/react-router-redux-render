@@ -1,3 +1,7 @@
+/**
+ * @typedef {import('redux').Store} Store
+ */
+
 import debug from 'debug'
 
 import Boom from '@hapi/boom'
@@ -11,10 +15,14 @@ const log = debug('@sequencemedia/react-router-redux-render')
 
 log('`react-router-redux-render` is awake')
 
+/**
+ * @param {Object.<string, any>} data
+ * @returns A boom object
+ */
 const notFound = (data) => Boom.notFound('Routing exception', data)
 
 /**
- * @param {Object.<string, any>} store
+ * @param {Store} store
  * @param {Object.<string, any>} routerProps
  * @param {Object.<string, any>} routes
  * @returns {string}
@@ -27,7 +35,7 @@ export function renderToString (store, { location, context = {}, ...router } = {
 }
 
 /**
- * @param {Object.<string, any>} store
+ * @param {Store} store
  * @param {Object.<string, any>} routerProps
  * @param {Object.<string, any>} routes
  * @returns {string}
@@ -40,7 +48,7 @@ export function renderToStaticMarkup (store, { location, context = {}, ...router
 }
 
 /**
- * @param {Object.<string, any>} store
+ * @param {Store} store
  * @param {Object.<string, any>} routerProps
  * @param {Object.<string, any>} routes
  * @returns {Promise<string>}
