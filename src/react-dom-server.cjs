@@ -1,4 +1,6 @@
-require('@babel/register')
+require('@babel/register')({
+  ignore: [/node_modules\/(?!@sequencemedia\/react-router-redux-render)/]
+})
 
 const {
   getReactDOMServerRenderToString,

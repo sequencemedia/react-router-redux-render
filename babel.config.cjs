@@ -10,5 +10,6 @@ module.exports = {
       }
     ],
     '@babel/react'
-  ]
+  ],
+  ignore: [/node_modules\/(?!@sequencemedia\/react-router-redux-render)/]
 }
