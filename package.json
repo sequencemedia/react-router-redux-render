@@ -12,8 +12,8 @@
     "renderToString",
     "renderToStaticMarkup"
   ],
-  "type": "module",
   "main": "./src/index.mjs",
+  "type": "module",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "jonathanperry@sequencemedia.net",
@@ -41,9 +41,9 @@
     "@babel/core": "^7.22.1",
     "@babel/eslint-parser": "^7.21.8",
     "@babel/preset-env": "^7.22.2",
-    "@babel/preset-react": "^7.22.0",
+    "@babel/preset-react": "^7.22.3",
     "@babel/register": "^7.21.0",
-    "@sequencemedia/hooks": "^1.0.424",
+    "@sequencemedia/hooks": "^1.0.425",
     "chai": "^4.3.7",
     "core-js": "^3.30.2",
     "eslint": "^8.41.0",
