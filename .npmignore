@@ -1,6 +1,7 @@
 .DS_Store
 
 .circleci
+.github
 .husky
 
 .editorconfig
@@ -21,7 +22,3 @@
 
 # Deps
 .depsrc
-
-# Build
-build
-gulpfile.*
