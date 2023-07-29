@@ -1,4 +1,4 @@
-import chai, { expect } from 'chai'
+import { use, expect } from 'chai'
 import sinonChai from 'sinon-chai'
 
 import {
@@ -9,7 +9,7 @@ import {
 
 import Routes from './routes.cjs'
 
-chai.use(sinonChai)
+use(sinonChai)
 
 describe('react-render', () => {
   describe('`renderToString`', () => {
