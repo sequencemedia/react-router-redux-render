@@ -44,7 +44,7 @@
     "@babel/preset-react": "^7.22.15",
     "@babel/register": "^7.22.15",
     "@sequencemedia/hooks": "^1.0.455",
-    "chai": "^4.3.9",
+    "chai": "^4.3.10",
     "core-js": "^3.32.2",
     "eslint": "^8.50.0",
     "eslint-config-standard": "^17.1.0",
