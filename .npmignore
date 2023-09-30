@@ -1,7 +1,6 @@
 .DS_Store
 
 .circleci
-.github
 .husky
 
 .editorconfig
