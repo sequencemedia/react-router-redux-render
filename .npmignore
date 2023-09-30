@@ -22,3 +22,6 @@
 
 # Deps
 .depsrc
+
+build
+test
