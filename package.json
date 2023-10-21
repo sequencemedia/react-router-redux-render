@@ -43,10 +43,10 @@
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
     "@babel/register": "^7.22.15",
-    "@sequencemedia/hooks": "^1.0.458",
+    "@sequencemedia/hooks": "^1.0.459",
     "chai": "^4.3.10",
-    "core-js": "^3.33.0",
-    "eslint": "^8.51.0",
+    "core-js": "^3.33.1",
+    "eslint": "^8.52.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
@@ -57,7 +57,7 @@
     "react-router": "6.14.2",
     "react-router-dom": "6.14.2",
     "redux": "^4.2.1",
-    "sinon": "^16.1.3",
+    "sinon": "^17.0.0",
     "sinon-chai": "^3.7.0"
   },
   "exports": {
