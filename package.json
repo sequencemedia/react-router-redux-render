@@ -38,14 +38,15 @@
     "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.6",
+    "@babel/core": "^7.23.7",
     "@babel/eslint-parser": "^7.23.3",
-    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-env": "^7.23.7",
     "@babel/preset-react": "^7.23.3",
-    "@babel/register": "^7.22.15",
-    "@sequencemedia/hooks": "^1.0.469",
-    "chai": "^4.3.10",
-    "core-js": "^3.34.0",
+    "@babel/register": "^7.23.7",
+    "@sequencemedia/hooks": "^1.0.471",
+    "@sequencemedia/sinon-chai": "^0.0.5",
+    "chai": "^5.0.0",
+    "core-js": "^3.35.0",
     "eslint": "^8.56.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-react": "^7.33.2",
@@ -57,8 +58,7 @@
     "react-router": "6.14.2",
     "react-router-dom": "6.14.2",
     "redux": "^5.0.1",
-    "sinon": "^17.0.1",
-    "sinon-chai": "^3.7.0"
+    "sinon": "^17.0.1"
   },
   "exports": {
     ".": "./src/index.mjs"

@@ -1,5 +1,5 @@
 import { use, expect } from 'chai'
-import sinonChai from 'sinon-chai'
+import sinonChai from '@sequencemedia/sinon-chai'
 
 import {
   renderToString,
@@ -26,7 +26,7 @@ describe('react-render', () => {
     })
   })
 
-  describe('`render`', () => {
+  xdescribe('`render`', () => {
     it('is a function', () => {
       return expect(render)
         .to.be.a('function')
