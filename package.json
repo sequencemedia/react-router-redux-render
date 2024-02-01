@@ -39,11 +39,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
-    "@babel/eslint-parser": "^7.23.9",
+    "@babel/eslint-parser": "^7.23.10",
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
     "@babel/register": "^7.23.7",
-    "@sequencemedia/hooks": "^1.0.476",
+    "@sequencemedia/hooks": "^1.0.477",
     "@sequencemedia/sinon-chai": "^0.0.6",
     "chai": "^5.0.3",
     "core-js": "^3.35.1",
