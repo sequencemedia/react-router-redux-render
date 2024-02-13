@@ -45,7 +45,7 @@
     "@babel/register": "^7.23.7",
     "@sequencemedia/hooks": "^1.0.478",
     "@sequencemedia/sinon-chai": "^0.0.6",
-    "chai": "^5.0.3",
+    "chai": "^5.1.0",
     "core-js": "^3.35.1",
     "eslint": "^8.56.0",
     "eslint-config-standard": "^17.1.0",
