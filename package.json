@@ -21,7 +21,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=18.12.0 <=21.7.3 || >=22.2.0"
   },
   "repository": {
     "type": "git",
@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.24.6",
     "@babel/preset-react": "^7.24.6",
     "@babel/register": "^7.24.6",
-    "@sequencemedia/hooks": "^1.0.492",
+    "@sequencemedia/hooks": "^1.0.493",
     "@sequencemedia/sinon-chai": "^0.0.6",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
