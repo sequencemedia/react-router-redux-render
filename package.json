@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@hapi/boom": "^10.0.1",
-    "debug": "^4.3.4"
+    "debug": "4.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.24.6",
     "@babel/preset-react": "^7.24.6",
     "@babel/register": "^7.24.6",
-    "@sequencemedia/hooks": "^1.0.493",
+    "@sequencemedia/hooks": "^1.0.494",
     "@sequencemedia/sinon-chai": "^0.0.6",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
