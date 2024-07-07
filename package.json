@@ -17,7 +17,7 @@
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "jonathanperry@sequencemedia.net",
-    "url": "http://sequencemedia.net"
+    "url": "https://sequencemedia.net"
   },
   "license": "ISC",
   "engines": {
@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@hapi/boom": "^10.0.1",
-    "debug": "4.3.4"
+    "debug": "^4.3.5"
   },
   "devDependencies": {
     "@babel/core": "^7.24.7",
@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
     "@babel/register": "^7.24.6",
-    "@sequencemedia/hooks": "^1.0.496",
+    "@sequencemedia/hooks": "^1.0.497",
     "@sequencemedia/sinon-chai": "^0.0.6",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
@@ -51,7 +51,7 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-react": "^7.34.3",
     "husky": "^9.0.11",
-    "mocha": "^10.5.2",
+    "mocha": "^10.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "^9.1.2",
