@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-react": "^7.24.7",
     "@babel/register": "^7.24.6",
-    "@sequencemedia/hooks": "^1.0.515",
+    "@sequencemedia/hooks": "^1.0.516",
     "@sequencemedia/sinon-chai": "^0.0.19",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
