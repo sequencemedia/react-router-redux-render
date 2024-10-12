@@ -38,12 +38,12 @@
     "debug": "^4.3.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.7",
-    "@babel/eslint-parser": "^7.25.7",
-    "@babel/preset-env": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/eslint-parser": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
     "@babel/preset-react": "^7.25.7",
     "@babel/register": "^7.25.7",
-    "@sequencemedia/sinon-chai": "^0.0.69",
+    "@sequencemedia/sinon-chai": "^0.0.70",
     "chai": "^5.1.1",
     "core-js": "^3.38.1",
     "eslint": "8.57.0",
