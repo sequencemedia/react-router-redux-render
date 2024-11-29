@@ -26,7 +26,7 @@ describe('react-render', () => {
     })
   })
 
-  xdescribe('`render`', () => {
+  describe('`render`', () => {
     it('is a function', () => {
       return expect(render)
         .to.be.a('function')
