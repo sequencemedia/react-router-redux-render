@@ -5,8 +5,12 @@
 import debug from 'debug'
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
-import { Provider } from 'react-redux'
-import { StaticRouter as Router } from 'react-router-dom/server'
+import {
+  Provider
+} from 'react-redux'
+import {
+  StaticRouter as Router
+} from 'react-router'
 import Boom from '@hapi/boom'
 
 const log = debug('@sequencemedia/react-redux-render')

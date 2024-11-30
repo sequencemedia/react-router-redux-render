@@ -11,7 +11,7 @@ import Routes from './routes.cjs'
 
 use(sinonChai)
 
-describe('react-render', () => {
+describe('@sequencemedia/react-router-redux-render', () => {
   describe('`renderToString`', () => {
     it('is a function', () => {
       return expect(renderToString)
