@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
     "@babel/register": "^7.25.9",
-    "@sequencemedia/sinon-chai": "^0.0.91",
+    "@sequencemedia/sinon-chai": "^0.0.92",
     "chai": "^5.1.2",
     "core-js": "^3.39.0",
     "eslint": "8.57.1",
