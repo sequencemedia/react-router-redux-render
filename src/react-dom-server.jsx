@@ -1,5 +1,15 @@
 /**
- * @typedef {import('redux').Store} Store
+ *  @typedef {import('redux').Store} Store
+ *  @typedef {ReactRouterReduxRenderTypes.RouterPropsType} RouterPropsType
+ *  @typedef {ReactRouterReduxRenderTypes.RoutesType} RoutesType
+ *
+ *  @typedef {{
+ *    props: RouterPropsType
+ *  }} RouterPropsException
+ *
+ *  @typedef {{
+ *    e: unknown
+ *  }} Exception
  */
 
 import debug from 'debug'
@@ -18,17 +28,21 @@ const log = debug('@sequencemedia/react-redux-render')
 log('`react-redux-render` is awake')
 
 /**
- * @param {Error} e
- * @param {{props: Object.<string, any>}} data
- * @returns A boom object
+ *  @param {Error} e
+ *  @param {RouterPropsException | Exception} data
+ *  @returns A boom object
  */
-const badImplementation = (e, data) => Boom.boomify(e, { statusCode: 500, message: 'Rendering exception', data })
+function badImplementation (e, data) {
+  return (
+    Boom.boomify(e, { statusCode: 500, message: 'Rendering exception', data })
+  )
+}
 
 /**
- * @param {Store} store
- * @param {Object.<string, any>} routerProps
- * @param {Object.<string, any>} routes
- * @returns {string}
+ *  @param {Store} store
+ *  @param {RouterPropsType} routerProps
+ *  @param {RoutesType} routes
+ *  @returns {string}
  */
 export function getReactDOMServerRenderToString (store, routerProps, routes) {
   try {
@@ -40,17 +54,16 @@ export function getReactDOMServerRenderToString (store, routerProps, routes) {
       </Provider>
     )
   } catch (e) {
-    log(e)
-
-    throw badImplementation(e, routerProps)
+    if (e instanceof Error) throw badImplementation(e, { props: routerProps })
+    throw badImplementation(new Error('Exception'), { e })
   }
 }
 
 /**
- * @param {Store} store
- * @param {Object.<string, any>} routerProps
- * @param {Object.<string, any>} routes
- * @returns {string}
+ *  @param {Store} store
+ *  @param {RouterPropsType} routerProps
+ *  @param {RoutesType} routes
+ *  @returns {string}
  */
 export function getReactDOMServerRenderToStaticMarkup (store, routerProps, routes) {
   try {
@@ -62,8 +75,7 @@ export function getReactDOMServerRenderToStaticMarkup (store, routerProps, route
       </Provider>
     )
   } catch (e) {
-    log(e)
-
-    throw badImplementation(e, routerProps)
+    if (e instanceof Error) throw badImplementation(e, { props: routerProps })
+    throw badImplementation(new Error('Exception'), { e })
   }
 }

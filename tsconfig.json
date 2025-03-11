@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": true,
+    "jsx": "react",
+    "paths": {
+      "#react-router-redux-render": [
+        "./src/index.mjs"
+      ],
+      "#react-router-redux-render/react-dom-server": [
+        "./src/react-dom-server.cjs"
+      ]
+    }
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "test"
+  ]
+}
