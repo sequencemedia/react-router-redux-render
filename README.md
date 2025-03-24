@@ -50,9 +50,9 @@ If `renderToString` cannot match the `pathname` to a `<Route />` then it throws 
 2. `renderToStaticMarkup`
 3. `render`
 
-`renderToString` generates `<html />` including the attributes that _React_ uses in `ReactDOM.hydrate()`. It implements [`ReactDOMServer.renderToString()`](https://reactjs.org/docs/react-dom-server.html#rendertostring).
+`renderToString` generates `<html />` including the attributes that _React_ uses in `ReactDOM.hydrate()`. It implements [`ReactDOMServer.renderToString()`](https://react.dev/reference/react-dom/server/renderToString).
 
-`renderToStaticMarkup` doesn't include those attributes. It's useful for using React as a rendering engine for static pages. It implements [`ReactDOMServer.renderToStaticMarkup()`](https://reactjs.org/docs/react-dom-server.html#rendertostraticmarkup).
+`renderToStaticMarkup` doesn't include those attributes. It's useful for using React as a rendering engine for static pages. It implements [`ReactDOMServer.renderToStaticMarkup()`](https://react.dev/reference/react-dom/server/renderToStaticMarkup).
 
 `render` executes `renderToString` but returns a `Promise` which resolves to a string.
 
