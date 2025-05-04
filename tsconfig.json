@@ -7,6 +7,7 @@
     "noEmit": true,
     "strict": true,
     "jsx": "react",
+    "baseUrl": ".",
     "paths": {
       "#react-router-redux-render": [
         "src/index.mjs"
