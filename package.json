@@ -72,7 +72,12 @@
     "redux": "^5.0.1",
     "sinon": "^20.0.0"
   },
+  "imports": {
+    "#react-router-redux-render": "./src/index.mjs",
+    "#react-router-redux-render/react-dom-server": "./src/react-dom-server.cjs"
+  },
   "exports": {
-    ".": "./src/index.mjs"
+    ".": "./src/index.mjs",
+    "./react-dom-server": "./src/react-dom-server.cjs"
   }
 }
