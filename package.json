@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@hapi/boom": "^10.0.1",
-    "debug": "^4.4.0"
+    "debug": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
