@@ -45,7 +45,7 @@
     "@babel/preset-react": "^7.27.1",
     "@babel/register": "^7.27.1",
     "@sequencemedia/eslint-config-standard": "^0.2.72",
-    "@sequencemedia/eslint-config-typescript": "^0.1.124",
+    "@sequencemedia/eslint-config-typescript": "^0.1.125",
     "@sequencemedia/sinon-chai": "^0.0.175",
     "@types/babel__register": "^7.17.3",
     "@types/debug": "^4.1.12",
