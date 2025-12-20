@@ -70,7 +70,7 @@
     "react-redux": "^9.2.0",
     "react-router": "^7.11.0",
     "redux": "^5.0.1",
-    "sinon": "^21.0.0"
+    "sinon": "^21.0.1"
   },
   "imports": {
     "#react-router-redux-render": "./src/index.mjs",
