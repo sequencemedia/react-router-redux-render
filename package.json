@@ -31,7 +31,7 @@
   "scripts": {
     "lint": "eslint",
     "lint:fix": "npm run lint -- --fix",
-    "prepare": "husky",
+    "prepare": "node husky.mjs",
     "test": "NODE_ENV=test mocha test --recursive --verbose"
   },
   "dependencies": {
