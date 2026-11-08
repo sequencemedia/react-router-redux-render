@@ -46,7 +46,7 @@
     "@babel/register": "7.29.7",
     "@sequencemedia/eslint-config-standard": "0.2.132",
     "@sequencemedia/eslint-config-typescript": "0.1.230",
-    "@sequencemedia/sinon-chai": "^0.0.241",
+    "@sequencemedia/sinon-chai": "^0.0.242",
     "@types/babel__register": "^7.17.3",
     "@types/debug": "^4.1.13",
     "@types/prop-types": "^15.7.15",
