@@ -79,5 +79,8 @@
   "exports": {
     ".": "./src/index.mjs",
     "./react-dom-server": "./src/react-dom-server.cjs"
+  },
+  "allowScripts": {
+    "core-js@3.51.0": true
   }
 }
